@@ -14,13 +14,27 @@
     $.HSCore.components.HSScrollNav.init($('.js-scroll-nav'), {
         duration: 700
     });
+
 });
 
 $(document).on('ready', function () {
     // initialization of header
     $.HSCore.components.HSHeader.init($('#header'));
 
- 
+    // initialization of slick carousel
+    $.HSCore.components.HSSlickCarousel.init('.js-slick-carousel');
+
+    // initialization of scroll effect component
+    $.HSCore.components.HSScrollEffect.init('.js-scroll-effect');
+
+    // initialization of unfold component
+    $.HSCore.components.HSUnfold.init($('[data-unfold-target]'));
+
+    // initialization of video on background
+    $.HSCore.components.HSBgVideo.init('.js-bg-video');
+
+    // initialization of fancybox
+    $.HSCore.components.HSFancyBox.init('.js-fancybox');
 
     // initialization of form validation
     $.HSCore.components.HSValidation.init('.js-validate');
