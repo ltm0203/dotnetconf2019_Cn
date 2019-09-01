@@ -3,73 +3,407 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - DotnetconfChina</title>
+    <title>@ViewData["Title"] -  中国 .NET 开发者峰会 China .NET Conf 2019  </title>
 
-    <environment include="Development">
-        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
-    </environment>
-    <environment exclude="Development">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
-              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute"
-              crossorigin="anonymous"
-              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"/>
-    </environment>
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="~/assets/vendor/font-awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="~/assets/vendor/animate.css/animate.min.css">
+    <link rel="stylesheet" href="~/assets/vendor/hs-megamenu/src/hs.megamenu.css">
+
+    <!-- CSS Front Template -->
+    <link rel="stylesheet" href="~/assets/css/theme.css">
+
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">DotnetconfChina</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
+<body id="homeSection">
+
+    <!-- ========== HEADER ========== -->
+    <header id="header" class="u-header u-header--abs-top-md u-header--bg-transparent u-header--show-hide-md"
+            data-header-fix-moment="500"
+            data-header-fix-effect="slide">
+        <div class="u-header__section">
+            <div id="logoAndNav" class="container">
+                <!-- Nav -->
+                <nav class="js-mega-menu navbar navbar-expand-md u-header__navbar u-header__navbar--no-space">
+                    <!-- Logo -->
+                    <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center" href="index.html" aria-label="Front">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="46px" height="46px" viewBox="0 0 46 46" xml:space="preserve" style="margin-bottom: 0;">
+                        <path fill="#3F7DE0" opacity=".65" d="M23,41L23,41c-9.9,0-18-8-18-18v0c0-9.9,8-18,18-18h11.3C38,5,41,8,41,11.7V23C41,32.9,32.9,41,23,41z" />
+
+
+
+                        <path class="fill-info" opacity=".5" d="M28,35.9L28,35.9c-9.9,0-18-8-18-18v0c0-9.9,8-18,18-18l11.3,0C43,0,46,3,46,6.6V18C46,27.9,38,35.9,28,35.9z" />
+
+
+
+                        <path class="fill-primary" opacity=".7" d="M18,46L18,46C8,46,0,38,0,28v0c0-9.9,8-18,18-18h11.3c3.7,0,6.6,3,6.6,6.6V28C35.9,38,27.9,46,18,46z" />
+
+
+
+                        <path class="fill-white" d="M17.4,34V18.3h10.2v2.9h-6.4v3.4h4.8v2.9h-4.8V34H17.4z" />
+
+            </svg>
+                        <span class="u-header__navbar-brand-text">Front</span>
+                    </a>
+                    <!-- End Logo -->
+                    <!-- Responsive Toggle Button -->
+                    <button type="button" class="navbar-toggler btn u-hamburger"
+                            aria-label="Toggle navigation"
+                            aria-expanded="false"
+                            aria-controls="navBar"
+                            data-toggle="collapse"
+                            data-target="#navBar">
+                        <span id="hamburgerTrigger" class="u-hamburger__box">
+                            <span class="u-hamburger__inner"></span>
+                        </span>
+                    </button>
+                    <!-- End Responsive Toggle Button -->
+                    <!-- Navigation -->
+                    <div id="navBar" class="collapse navbar-collapse u-header__navbar-collapse">
+                        <ul class="js-scroll-nav navbar-nav align-items-md-center u-header__navbar-nav">
+                            <li class="nav-item u-header__nav-item active">
+                                <a class="nav-link u-header__nav-link" href="#homeSection">Home</a>
+                            </li>
+                            <li class="nav-item u-header__nav-item">
+                                <a class="nav-link u-header__nav-link" href="#pricingSection">Pricing</a>
+                            </li>
+                            <li class="nav-item u-header__nav-item">
+                                <a class="nav-link u-header__nav-link" href="#eventsSection">Events</a>
+                            </li>
+                            <li class="nav-item u-header__nav-item">
+                                <a class="nav-link u-header__nav-link" href="#hiringSection">Hiring</a>
+                            </li>
+                            <li class="nav-item u-header__nav-item">
+                                <a class="nav-link u-header__nav-link" href="#contactsSection">Contacts</a>
+                            </li>
+
+                            <!-- Demos -->
+                            <li class="nav-item hs-has-mega-menu u-header__nav-item"
+                                data-event="hover"
+                                data-animation-in="slideInUp"
+                                data-animation-out="fadeOut"
+                                data-max-width="900px"
+                                data-position="right">
+                                <a id="demosMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false">Demos</a>
+
+                                <!-- Demos - Mega Menu -->
+                                <div class="hs-mega-menu w-100 u-header__sub-menu" aria-labelledby="demosMegaMenu">
+                                    <div class="row no-gutters">
+                                        <div class="col-lg-8">
+                                            <div class="u-header__promo-card-deck">
+                                                <!-- Promo Item -->
+                                                <div class="u-header__promo-card u-header__promo-item">
+                                                    <a class="u-header__promo-link" href="../app-marketplace/index.html">
+                                                        <div class="media align-items-center">
+                                                            <img class="js-svg-injector u-header__promo-icon" src="~/assets/svg/icons/icon-45.svg" alt="SVG">
+                                                            <div class="media-body">
+                                                                <span class="u-header__promo-title">App Marketplace <span class="badge badge-success badge-pill ml-1">New</span></span>
+                                                                <small class="u-header__promo-text">Marketplace app demo</small>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <!-- End Promo Item -->
+                                                <!-- Promo Item -->
+                                                <div class="u-header__promo-card u-header__promo-item">
+                                                    <a class="u-header__promo-link" href="../house/index.html">
+                                                        <div class="media align-items-center">
+                                                            <img class="js-svg-injector u-header__promo-icon" src="~/assets/svg/icons/icon-13.svg" alt="SVG">
+                                                            <div class="media-body">
+                                                                <span class="u-header__promo-title">House</span>
+                                                                <small class="u-header__promo-text">Real estate demo</small>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <!-- End Promo Item -->
+                                            </div>
+
+                                            <div class="u-header__promo-card-deck">
+                                                <!-- Promo Item -->
+                                                <div class="u-header__promo-card u-header__promo-item">
+                                                    <a class="u-header__promo-link" href="../job/index.html">
+                                                        <div class="media align-items-center">
+                                                            <img class="js-svg-injector u-header__promo-icon" src="~/assets/svg/icons/icon-19.svg" alt="SVG">
+                                                            <div class="media-body">
+                                                                <span class="u-header__promo-title">Job</span>
+                                                                <small class="u-header__promo-text">Job vacancy demo</small>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <!-- End Promo Item -->
+                                                <!-- Promo Item -->
+                                                <div class="u-header__promo-card u-header__promo-item">
+                                                    <a class="u-header__promo-link" href="../help-desk/index.html">
+                                                        <div class="media align-items-center">
+                                                            <img class="js-svg-injector u-header__promo-icon" src="~/assets/svg/icons/icon-4.svg" alt="SVG">
+                                                            <div class="media-body">
+                                                                <span class="u-header__promo-title">Help Desk</span>
+                                                                <small class="u-header__promo-text">Help desk demo</small>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <!-- End Promo Item -->
+                                            </div>
+
+                                            <div class="u-header__promo-card-deck">
+                                                <!-- Promo Item -->
+                                                <div class="u-header__promo-card u-header__promo-item">
+                                                    <a class="u-header__promo-link" href="../crypto/index.html">
+                                                        <div class="media align-items-center">
+                                                            <img class="js-svg-injector u-header__promo-icon" src="~/assets/svg/icons/icon-5.svg" alt="SVG">
+                                                            <div class="media-body">
+                                                                <span class="u-header__promo-title">Crypto Landing</span>
+                                                                <small class="u-header__promo-text">Cryptocurrency demo</small>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <!-- End Promo Item -->
+                                                <!-- Promo Item -->
+                                                <div class="u-header__promo-card u-header__promo-item">
+                                                    <div class="u-header__promo-link">
+                                                        <div class="media align-items-center">
+                                                            <img class="js-svg-injector u-header__promo-icon" src="~/assets/svg/icons/icon-23.svg" alt="SVG">
+                                                            <div class="media-body">
+                                                                <span class="u-header__promo-title text-secondary">New demos</span>
+                                                                <small class="u-header__promo-text">coming soon ...</small>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- End Promo Item -->
+                                            </div>
+                                        </div>
+
+                                        <!-- Promo -->
+                                        <div class="col-lg-4 u-header__promo d-none d-lg-block">
+                                            <a class="d-block u-header__promo-inner" href="javascript:;">
+                                                <div class="position-relative">
+                                                    <img class="img-fluid rounded mb-3" src="~/assets/img/380x227/img6.jpg" alt="Image Description">
+                                                </div>
+                                                <span class="text-secondary font-size-1">Front makes you look at things from a different perspectives.</span>
+                                            </a>
+                                        </div>
+                                        <!-- End Promo -->
+                                    </div>
+                                </div>
+                                <!-- End Demos - Mega Menu -->
+                            </li>
+                            <!-- End Demos -->
+                            <!-- Docs -->
+                            <li class="nav-item hs-has-mega-menu u-header__nav-item"
+                                data-event="hover"
+                                data-animation-in="slideInUp"
+                                data-animation-out="fadeOut"
+                                data-max-width="260px"
+                                data-position="right">
+                                <a id="docsMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false">Docs</a>
+
+                                <!-- Docs - Submenu -->
+                                <div class="hs-mega-menu u-header__sub-menu" aria-labelledby="docsMegaMenu" style="min-width: 330px;">
+                                    <!-- Promo Item -->
+                                    <div class="u-header__promo-item">
+                                        <a class="u-header__promo-link" href="../../documentation/index.html">
+                                            <div class="media align-items-center">
+                                                <img class="js-svg-injector u-header__promo-icon" src="~/assets/svg/icons/icon-2.svg" alt="SVG">
+                                                <div class="media-body">
+                                                    <span class="u-header__promo-title">
+                                                        Documentation
+                                                        <span class="badge badge-primary badge-pill ml-1">v2.9</span>
+                                                    </span>
+                                                    <small class="u-header__promo-text">Development guides</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- End Promo Item -->
+                                    <!-- Promo Item -->
+                                    <div class="u-header__promo-item">
+                                        <a class="u-header__promo-link" href="../../starter/index.html">
+                                            <div class="media align-items-center">
+                                                <img class="js-svg-injector u-header__promo-icon" src="~/assets/svg/icons/icon-1.svg" alt="SVG">
+                                                <div class="media-body">
+                                                    <span class="u-header__promo-title">Get started</span>
+                                                    <small class="u-header__promo-text">Components and snippets</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- End Promo Item -->
+
+                                    <div class="u-header__promo-footer">
+                                        <!-- List -->
+                                        <div class="row no-gutters">
+                                            <div class="col-6">
+                                                <div class="u-header__promo-footer-item">
+                                                    <small class="text-muted d-block">Check what's new</small>
+                                                    <a class="small" href="../../documentation/getting-started/changelog.html">
+                                                        Changelog
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 u-header__promo-footer-ver-divider">
+                                                <div class="u-header__promo-footer-item">
+                                                    <small class="text-muted d-block">Have a question?</small>
+                                                    <a class="small" href="http://htmlstream.com/contact-us">
+                                                        Contact us
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End List -->
+                                    </div>
+                                </div>
+                                <!-- End Docs - Submenu -->
+                            </li>
+                            <!-- End Docs -->
+                            <!-- Search -->
+                            <li class="nav-item u-header__nav-last-item">
+                                <a id="searchSlideDownInvoker" class="btn btn-xs btn-icon btn-text-secondary u-search-slide-down-trigger" href="javascript:;" role="button"
+                                   aria-haspopup="true"
+                                   aria-expanded="false"
+                                   aria-controls="searchSlideDown"
+                                   data-unfold-type="css-animation"
+                                   data-unfold-hide-on-scroll="false"
+                                   data-unfold-target="#searchSlideDown"
+                                   data-unfold-animation-in="active"
+                                   data-unfold-animation-out="fadeOutUp"
+                                   data-unfold-delay="0"
+                                   data-unfold-duration="800"
+                                   data-unfold-overlay='{
+                    "className": "u-search-slide-down-bg-overlay",
+                    "background": "rgba(30, 32, 34, .3)",
+                    "animationSpeed": 400
+                   }'>
+                                    <span class="fas fa-search btn-icon__inner u-search-slide-down-trigger__icon"></span>
+                                </a>
+                            </li>
+                            <!-- End Search -->
+                        </ul>
+                    </div>
+                    <!-- End Navigation -->
+                </nav>
+                <!-- End Nav -->
+            </div>
+        </div>
+    </header>
+    <!-- ========== END HEADER ========== -->
+    <!-- ==========  MAIN CONTENT ========== -->
+
+    <main id="content" role="main">
+
+        @RenderBody()
+    </main>
+
+    <!-- ========== END MAIN CONTENT ========== -->
+    <!-- ========== FOOTER ========== -->
+    <footer class="container space-1">
+        <div class="row align-items-md-center">
+            <div class="col-md-3 mb-4 mb-md-0">
+                <div class="d-flex align-items-center">
+                    <a class="d-inline-flex align-items-center" href="index.html" aria-label="Front">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="36px" height="36px" viewBox="0 0 46 46" xml:space="preserve" style="margin-bottom: 0;">
+                        <path fill="#3F7DE0" opacity=".65" d="M23,41L23,41c-9.9,0-18-8-18-18v0c0-9.9,8-18,18-18h11.3C38,5,41,8,41,11.7V23C41,32.9,32.9,41,23,41z" />
+
+
+
+                        <path class="fill-info" opacity=".5" d="M28,35.9L28,35.9c-9.9,0-18-8-18-18v0c0-9.9,8-18,18-18l11.3,0C43,0,46,3,46,6.6V18C46,27.9,38,35.9,28,35.9z" />
+
+
+
+                        <path class="fill-primary" opacity=".7" d="M18,46L18,46C8,46,0,38,0,28v0c0-9.9,8-18,18-18h11.3c3.7,0,6.6,3,6.6,6.6V28C35.9,38,27.9,46,18,46z" />
+
+
+
+                        <path class="fill-white" d="M17.4,34V18.3h10.2v2.9h-6.4v3.4h4.8v2.9h-4.8V34H17.4z" />
+
+            </svg>
+                        <span class="brand brand-primary">Front</span>
+                    </a>
                 </div>
             </div>
-        </nav>
-    </header>
-    <div class="container">
-        <partial name="_CookieConsentPartial" />
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2019 - DotnetconfChina - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            <div class="col-sm-7 col-md-6 mb-4 mb-sm-0">
+                <!-- List -->
+                <ul class="list-inline list-group-flush list-group-borderless font-size-1 text-md-center mb-0">
+                    <li class="list-inline-item pr-3">
+                        <a class="list-group-item-action" href="../pages/about-agency.html">About</a>
+                    </li>
+                    <li class="list-inline-item px-3">
+                        <a class="list-group-item-action" href="../pages/services-agency.html">Services</a>
+                    </li>
+                    <li class="list-inline-item px-3">
+                        <a class="list-group-item-action" href="../portfolio/boxed-classic.html">Our work</a>
+                    </li>
+                </ul>
+                <!-- End List -->
+            </div>
+
+            <div class="col-sm-5 col-md-3 text-sm-right">
+                <!-- Social Networks -->
+                <ul class="list-inline mb-0">
+                    <li class="list-inline-item">
+                        <a class="btn btn-sm btn-icon btn-soft-dark btn-bg-transparent rounded-circle" href="#">
+                            <span class="fab fa-facebook-f btn-icon__inner"></span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="btn btn-sm btn-icon btn-soft-dark btn-bg-transparent rounded-circle" href="#">
+                            <span class="fab fa-google btn-icon__inner"></span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="btn btn-sm btn-icon btn-soft-dark btn-bg-transparent rounded-circle" href="#">
+                            <span class="fab fa-twitter btn-icon__inner"></span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="btn btn-sm btn-icon btn-soft-dark btn-bg-transparent rounded-circle" href="#">
+                            <span class="fab fa-github btn-icon__inner"></span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- End Social Networks -->
+            </div>
         </div>
     </footer>
+    <!-- ========== END FOOTER ========== -->
+    <!-- Go to Top -->
+    <a class="js-go-to u-go-to" href="#"
+       data-position='{"bottom": 15, "right": 15 }'
+       data-type="fixed"
+       data-offset-top="400"
+       data-compensation="#header"
+       data-show-effect="slideInUp"
+       data-hide-effect="slideOutDown">
+        <span class="fas fa-arrow-up u-go-to__inner"></span>
+    </a>
+    <!-- End Go to Top -->
+    <!-- JS Global Compulsory -->
+    <script src="~/assets/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="~/assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+    <script src="~/assets/vendor/popper.js/dist/umd/popper.min.js"></script>
+    <script src="~/assets/vendor/bootstrap/bootstrap.min.js"></script>
 
-    <environment include="Development">
-        <script src="~/lib/jquery/dist/jquery.js"></script>
-        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.js"></script>
-    </environment>
-    <environment exclude="Development">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
-                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
-                asp-fallback-test="window.jQuery"
-                crossorigin="anonymous"
-                integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=">
-        </script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
-                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
-                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
-                crossorigin="anonymous"
-                integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o">
-        </script>
-    </environment>
+    <!-- JS Implementing Plugins -->
+    <script src="~/assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+    <script src="~/assets/vendor/svg-injector/dist/svg-injector.min.js"></script>
+    <script src="~/assets/vendor/appear.js"></script>
+    <script src="~/assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+
+
+    <!-- JS Front -->
+    <script src="~/assets/js/hs.core.js"></script>
+    <script src="~/assets/js/components/hs.header.js"></script>
+    <script src="~/assets/js/components/hs.unfold.js"></script>
+    <script src="~/assets/js/components/hs.scroll-nav.js"></script>
+    <script src="~/assets/js/components/hs.svg-injector.js"></script>
+    <script src="~/assets/js/components/hs.validation.js"></script>
+    <script src="~/assets/js/components/hs.go-to.js"></script>
+
     <script src="~/js/site.js" asp-append-version="true"></script>
 
     @RenderSection("Scripts", required: false)

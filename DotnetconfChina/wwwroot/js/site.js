@@ -1,4 +1,31 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿$(window).on('load', function () {
+    // initialization of HSMegaMenu component
+    $('.js-mega-menu').HSMegaMenu({
+        event: 'hover',
+        pageContainer: $('.container'),
+        breakpoint: 767.98,
+        hideTimeOut: 0
+    });
 
-// Write your JavaScript code.
+    // initialization of svg injector module
+    $.HSCore.components.HSSVGIngector.init('.js-svg-injector');
+
+    // initialization of HSScrollNav component
+    $.HSCore.components.HSScrollNav.init($('.js-scroll-nav'), {
+        duration: 700
+    });
+});
+
+$(document).on('ready', function () {
+    // initialization of header
+    $.HSCore.components.HSHeader.init($('#header'));
+
+ 
+
+    // initialization of form validation
+    $.HSCore.components.HSValidation.init('.js-validate');
+
+    // initialization of go to
+    $.HSCore.components.HSGoTo.init('.js-go-to');
+});
+

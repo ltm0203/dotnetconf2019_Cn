@@ -2,7 +2,551 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<!-- Hero Section -->
+<div class="container position-relative z-index-4 space-2 space-top-md-4 space-top-lg-3 space-bottom-lg-3">
+    <div class="row justify-content-lg-between align-items-lg-center">
+        <div class="col-md-10 col-lg-5 mb-9 mb-lg-0">
+            <div class="mb-7">
+                <h1 class="display-4 font-size-md-down-5 font-weight-semi-bold mb-4">Join Front Event manager</h1>
+                <p class="lead font-weight-normal">Whatever your goal - we will get your there.</p>
+            </div>
+
+            <img class="img-fluid" src="~/assets/svg/illustrations/we-are-in-office.svg" alt="Image Description">
+        </div>
+
+        <div class="col-lg-6">
+            <!-- Form -->
+            <form class="js-validate card shadow">
+                <div class="card-header bg-light text-center py-4 px-5 px-md-6">
+                    <h2 class="h6 font-weight-semi-bold mb-0">Try it free for 7 days <span class="text-secondary font-size-1 font-weight-medium">starting at $59</span></h2>
+                </div>
+
+                <div class="card-body p-5 p-md-6">
+                    <div class="row">
+                        <div class="col-sm-6 mb-3">
+                            <!-- Form Group -->
+                            <div class="js-form-message form-group">
+                                <label for="firstName" class="form-label">First name <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" name="firstName" id="firstName" placeholder="Nataly" aria-label="Nataly" required
+                                       data-msg="Please enter first your name"
+                                       data-error-class="u-has-error"
+                                       data-success-class="u-has-success">
+                            </div>
+                            <!-- End Form Group -->
+                        </div>
+
+                        <div class="col-sm-6 mb-3">
+                            <!-- Form Group -->
+                            <div class="js-form-message form-group">
+                                <label for="lastName" class="form-label">Last name <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" name="lastName" id="lastName" placeholder="Gaga" aria-label="Gaga" required
+                                       data-msg="Please enter last your name"
+                                       data-error-class="u-has-error"
+                                       data-success-class="u-has-success">
+                            </div>
+                            <!-- End Form Group -->
+                        </div>
+
+                        <div class="col-sm-12 mb-3">
+                            <!-- Form Group -->
+                            <div class="js-form-message form-group">
+                                <label for="emailAddress" class="form-label">Email address <span class="text-danger">*</span></label>
+                                <input type="email" class="form-control" name="emailAddress" id="emailAddress" placeholder="nayagaga@pixeel.com" aria-label="alex@pixeel.com" required
+                                       data-msg="Please enter a valid email address"
+                                       data-error-class="u-has-error"
+                                       data-success-class="u-has-success">
+                            </div>
+                            <!-- End Form Group -->
+                        </div>
+
+                        <div class="col-sm-6 mb-3">
+                            <!-- Form Group -->
+                            <div class="js-form-message form-group">
+                                <label for="password" class="form-label">Password <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" name="passowrd" id="password" placeholder="*********" aria-label="*********" required
+                                       data-msg="Your password is invalid. Please try again"
+                                       data-error-class="u-has-error"
+                                       data-success-class="u-has-success">
+                            </div>
+                            <!-- End Form Group -->
+                        </div>
+
+                        <div class="col-sm-6 mb-3">
+                            <!-- Form Group -->
+                            <div class="js-form-message form-group">
+                                <label for="confirmPassword" class="form-label">Confirm password <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" name="confirmPassword" id="confirmPassword" placeholder="*********" aria-label="*********" required
+                                       data-msg="Password does not match the confirm password"
+                                       data-error-class="u-has-error"
+                                       data-success-class="u-has-success">
+                            </div>
+                            <!-- End Form Group -->
+                        </div>
+                    </div>
+
+                    <!-- Checkbox -->
+                    <div class="js-form-message mb-5">
+                        <div class="custom-control custom-checkbox d-flex align-items-center text-muted">
+                            <input type="checkbox" class="custom-control-input" id="termsCheckbox" name="termsCheckbox" required
+                                   data-msg="Please accept our Terms and Conditions."
+                                   data-error-class="u-has-error"
+                                   data-success-class="u-has-success">
+                            <label class="custom-control-label" for="termsCheckbox">
+                                <small>
+                                    I agree to the
+                                    <a class="link-muted" href="../pages/terms.html">Terms and Conditions</a>
+                                </small>
+                            </label>
+                        </div>
+                    </div>
+                    <!-- End Checkbox -->
+
+                    <button type="submit" class="btn btn-block btn-primary transition-3d-hover">
+                        Claim your free trial
+                        <span class="fas fa-angle-right align-middle ml-2"></span>
+                    </button>
+                </div>
+            </form>
+            <!-- End Form -->
+        </div>
+    </div>
 </div>
+<!-- End Hero Section -->
+<!-- Stats Section -->
+<div class="bg-light rounded mx-3 mx-md-8">
+    <div class="container space-2">
+        <div class="row justify-content-lg-center">
+            <div class="col-md-4 mb-7 mb-md-0">
+                <!-- Stats -->
+                <a class="d-block u-indicator-vertical-line text-center px-md-3" href="#">
+                    <img class="u-clients mb-3" src="~/assets/svg/clients-logo/slack-original.svg" alt="Image Description">
+                    <span class="d-block h2 text-dark font-weight-semi-bold">4.89 / 5</span>
+                    <p>based on more than 35 real user reviews on Bootstrap Themes</p>
+                </a>
+                <!-- End Stats -->
+            </div>
+
+            <div class="col-md-4 mb-7 mb-md-0">
+                <!-- Stats -->
+                <a class="d-block u-indicator-vertical-line text-center px-md-3" href="#">
+                    <img class="u-clients mb-3" src="~/assets/svg/clients-logo/fitbit-original.svg" alt="Image Description">
+                    <span class="d-block h2 text-dark font-weight-semi-bold">$25,000</span>
+                    <p>at your company's disposal after accepting your application</p>
+                </a>
+                <!-- End Stats -->
+            </div>
+
+            <div class="col-md-4">
+                <!-- Stats -->
+                <a class="d-block text-center px-md-3" href="#">
+                    <img class="u-clients mb-3" src="~/assets/svg/clients-logo/hubspot-original.svg" alt="Image Description">
+                    <span class="d-block h2 text-dark font-weight-semi-bold">40,000+</span>
+                    <p>business owners use Front across all over the world</p>
+                </a>
+                <!-- End Stats -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Stats Section -->
+<!-- Pricing Section -->
+<div id="pricingSection" class="container space-top-2 space-top-lg-3">
+    <!-- Title -->
+    <div class="w-lg-65 text-center mx-auto mb-5 mb-sm-9">
+        <h2 class="h1 font-weight-semi-bold">Scalable plans</h2>
+        <p>All kinds of plans that scale with your user growth</p>
+    </div>
+    <!-- End Title -->
+
+    <div class="w-lg-75 mx-lg-auto">
+        <div class="row align-items-sm-end mx-n2 mb-7">
+            <div class="col-sm-6 col-md-4 px-2 mb-3 mb-md-0">
+                <!-- Pricing -->
+                <div class="card text-center shadow">
+                    <div class="card-header border-0 pt-5 px-5">
+                        <img class="mb-2" src="~/assets/svg/components/one-dot.svg" alt="Image Description" width="60">
+                        <h4 class="h6 mb-3">Starter</h4>
+                        <span class="font-size-2 font-weight-semi-bold">Free</span>
+                    </div>
+                    <div class="card-body pt-0 pb-5 px-5">
+                        <ul class="list-group list-group-flush list-group-borderless text-secondary mb-4">
+                            <li class="list-group-item">Community support</li>
+                            <li class="list-group-item">400+ pages</li>
+                        </ul>
+                        <button type="button" class="btn btn-sm btn-block btn-outline-primary transition-3d-hover">Create Account</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 px-2 mb-3 mb-md-0">
+                <!-- Pricing -->
+                <div class="card text-center shadow">
+                    <div class="card-header border-0 pt-5 px-5">
+                        <img class="mb-2" src="~/assets/svg/components/two-dots.svg" alt="Image Description" width="60">
+                        <h4 class="h6 mb-3">Individual</h4>
+                        <span class="font-size-2 font-weight-semi-bold">$59</span>
+                    </div>
+                    <div class="card-body pt-0 pb-5 px-5">
+                        <ul class="list-group list-group-flush list-group-borderless text-secondary mb-4">
+                            <li class="list-group-item">Community support</li>
+                            <li class="list-group-item">400+ pages</li>
+                            <li class="list-group-item">100+ header variations</li>
+                        </ul>
+                        <button type="button" class="btn btn-sm btn-block btn-primary transition-3d-hover">Try Free for 14 days</button>
+                    </div>
+                </div>
+                <!-- End Pricing -->
+            </div>
+
+            <div class="col-sm-6 col-md-4 px-2">
+                <!-- Pricing -->
+                <div class="card text-center shadow">
+                    <div class="card-header border-0 pt-5 px-5">
+                        <img class="mb-2" src="~/assets/svg/components/three-dots.svg" alt="Image Description" width="60">
+                        <h4 class="h6 mb-3">Enterprise</h4>
+                        <span class="font-size-2 font-weight-semi-bold">$599</span>
+                    </div>
+                    <div class="card-body pt-0 pb-5 px-5">
+                        <ul class="list-group list-group-flush list-group-borderless text-secondary mb-4">
+                            <li class="list-group-item">Community support</li>
+                            <li class="list-group-item">400+ pages</li>
+                            <li class="list-group-item">100+ header variations</li>
+                            <li class="list-group-item">20+ home page options</li>
+                        </ul>
+                        <button type="button" class="btn btn-sm btn-block btn-primary transition-3d-hover">Try Free for 14 days</button>
+                    </div>
+                </div>
+                <!-- End Pricing -->
+            </div>
+        </div>
+
+        <!-- Link -->
+        <div class="text-center">
+            <a href="../pages/careers.html">
+                <span class="text-secondary">Contact us for</span>
+                <span class="btn btn-icon btn-sm btn-soft-primary rounded-circle mx-2">
+                    <span class="fas fa-angle-right btn-icon__inner"></span>
+                </span>
+                <span class="text-secondary">custom plans</span>
+            </a>
+        </div>
+        <!-- End Link -->
+    </div>
+</div>
+<!-- End Pricing Section -->
+<!-- Events Section -->
+<div id="eventsSection" class="bg-primary rounded mx-3 mx-md-8">
+    <div class="container space-2 space-lg-3">
+        <!-- Title -->
+        <div class="w-lg-65 text-center text-white mx-auto mb-5 mb-sm-7">
+            <h2 class="h1 font-weight-semi-bold">Front events</h2>
+        </div>
+        <!-- End Title -->
+        <!-- Nav -->
+        <div class="w-lg-65 mx-lg-auto mb-3">
+            <ul class="nav nav-border-white justify-content-center" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="pills-one-code-sample-tab" data-toggle="pill" href="#pills-one-code-sample" role="tab" aria-controls="pills-one-code-sample" aria-selected="true">
+                        This week
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-two-code-sample-tab" data-toggle="pill" href="#pills-two-code-sample" role="tab" aria-controls="pills-two-code-sample" aria-selected="false">
+                        Next week
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-three-code-sample-tab" data-toggle="pill" href="#pills-three-code-sample" role="tab" aria-controls="pills-three-code-sample" aria-selected="false">
+                        This month
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- End Nav -->
+        <!-- Tab Content -->
+        <div class="tab-content">
+            <div class="tab-pane fade pt-5 show active" id="pills-one-code-sample" role="tabpanel" aria-labelledby="pills-one-code-sample-tab">
+                <!-- Table -->
+                <div class="table-responsive-lg mb-9">
+                    <table class="table table-bordered table-light-bordered text-white">
+                        <thead>
+                            <tr>
+                                <th scope="col">Calendar</th>
+                                <th scope="col">Mon</th>
+                                <th scope="col">Tue</th>
+                                <th scope="col">Wed</th>
+                                <th scope="col">Thr</th>
+                                <th scope="col">Fri</th>
+                                <th scope="col">Sat</th>
+                                <th scope="col">Sun</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">12PM</th>
+                                <td class="bg-white text-dark">
+                                    <span class="d-block font-weight-semi-bold">How great leaders inspire action</span>
+                                    <span class="d-block">July 9, 2019</span>
+                                </td>
+                                <td></td>
+                                <td>
+                                    <span class="d-block font-weight-semi-bold">The power of introverts</span>
+                                    <span class="d-block">July 18 - 19, 2019</span>
+                                </td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="bg-white text-dark">
+                                    <span class="d-block font-weight-semi-bold">The happy secret to better work</span>
+                                    <span class="d-block">July 23, 2019</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">01PM</th>
+                                <td></td>
+                                <td>
+                                    <span class="d-block font-weight-semi-bold">UI/UX</span>
+                                    <span class="d-block">July 31 - August 1, 2019</span>
+                                </td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    <span class="d-block font-weight-semi-bold">Front best of breed</span>
+                                    <span class="d-block">August 8, 2019</span>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">04PM</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="bg-white text-dark">
+                                    <span class="d-block font-weight-semi-bold">Why Front?</span>
+                                    <span class="d-block">October 20 - 24, 2019</span>
+                                </td>
+                                <td></td>
+                                <td>
+                                    <span class="d-block font-weight-semi-bold">Dubai Front Meetup</span>
+                                    <span class="d-block">October 28 - 31, 2019</span>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">06PM</th>
+                                <td></td>
+                                <td>
+                                    <span class="d-block font-weight-semi-bold">Box world tour Tokyo</span>
+                                    <span class="d-block">November 3 - 7, 2019</span>
+                                </td>
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    <span class="d-block font-weight-semi-bold">Front in '19</span>
+                                    <span class="d-block">November 12 - 14, 2019</span>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- End Table -->
+            </div>
+
+            <div class="tab-pane fade pt-5" id="pills-two-code-sample" role="tabpanel" aria-labelledby="pills-two-code-sample-tab">
+                <!-- Table -->
+                <div class="table-responsive-lg mb-9">
+                    <table class="table table-bordered table-light-bordered text-white">
+                        <thead>
+                            <tr>
+                                <th scope="col">Calendar</th>
+                                <th scope="col">Mon</th>
+                                <th scope="col">Tue</th>
+                                <th scope="col">Wed</th>
+                                <th scope="col">Thr</th>
+                                <th scope="col">Fri</th>
+                                <th scope="col">Sat</th>
+                                <th scope="col">Sun</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">12PM</th>
+                                <td>
+                                    <span class="d-block font-weight-semi-bold">How great leaders inspire action</span>
+                                    <span class="d-block">July 9, 2019</span>
+                                </td>
+                                <td></td>
+                                <td>
+                                    <span class="d-block font-weight-semi-bold">The power of introverts</span>
+                                    <span class="d-block">July 18 - 19, 2019</span>
+                                </td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    <span class="d-block font-weight-semi-bold">The happy secret to better work</span>
+                                    <span class="d-block">July 23, 2019</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">01PM</th>
+                                <td></td>
+                                <td class="bg-white text-dark">
+                                    <span class="d-block font-weight-semi-bold">UI/UX</span>
+                                    <span class="d-block">July 31 - August 1, 2019</span>
+                                </td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    <span class="d-block font-weight-semi-bold">Front best of breed</span>
+                                    <span class="d-block">August 8, 2019</span>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">04PM</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    <span class="d-block font-weight-semi-bold">Why Front?</span>
+                                    <span class="d-block">October 20 - 24, 2019</span>
+                                </td>
+                                <td></td>
+                                <td>
+                                    <span class="d-block font-weight-semi-bold">Dubai Front Meetup</span>
+                                    <span class="d-block">October 28 - 31, 2019</span>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">06PM</th>
+                                <td></td>
+                                <td>
+                                    <span class="d-block font-weight-semi-bold">Box world tour Tokyo</span>
+                                    <span class="d-block">November 3 - 7, 2019</span>
+                                </td>
+                                <td></td>
+                                <td></td>
+                                <td class="bg-white text-dark">
+                                    <span class="d-block font-weight-semi-bold">Front in '19</span>
+                                    <span class="d-block">November 12 - 14, 2019</span>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- End Table -->
+            </div>
+
+            <div class="tab-pane fade pt-5" id="pills-three-code-sample" role="tabpanel" aria-labelledby="pills-three-code-sample-tab">
+                <!-- Table -->
+                <div class="table-responsive-lg mb-9">
+                    <table class="table table-bordered table-light-bordered text-white">
+                        <thead>
+                            <tr>
+                                <th scope="col">Calendar</th>
+                                <th scope="col">Sep 6th</th>
+                                <th scope="col">Sep 13th</th>
+                                <th scope="col">Sep 19th</th>
+                                <th scope="col">Sep 21th</th>
+                                <th scope="col">Sep 25th</th>
+                                <th scope="col">Sep 29th</th>
+                                <th scope="col">Sep 30th</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">12PM</th>
+                                <td>
+                                    <span class="d-block font-weight-semi-bold">How great leaders inspire action</span>
+                                    <span class="d-block">July 9, 2019</span>
+                                </td>
+                                <td></td>
+                                <td class="bg-white text-dark">
+                                    <span class="d-block font-weight-semi-bold">The power of introverts</span>
+                                    <span class="d-block">July 18 - 19, 2019</span>
+                                </td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    <span class="d-block font-weight-semi-bold">The happy secret to better work</span>
+                                    <span class="d-block">July 23, 2019</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">01PM</th>
+                                <td></td>
+                                <td>
+                                    <span class="d-block font-weight-semi-bold">UI/UX</span>
+                                    <span class="d-block">July 31 - August 1, 2019</span>
+                                </td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    <span class="d-block font-weight-semi-bold">Front best of breed</span>
+                                    <span class="d-block">August 8, 2019</span>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">04PM</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    <span class="d-block font-weight-semi-bold">Why Front?</span>
+                                    <span class="d-block">October 20 - 24, 2019</span>
+                                </td>
+                                <td></td>
+                                <td class="bg-white text-dark">
+                                    <span class="d-block font-weight-semi-bold">Dubai Front Meetup</span>
+                                    <span class="d-block">October 28 - 31, 2019</span>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">06PM</th>
+                                <td></td>
+                                <td class="bg-white text-dark">
+                                    <span class="d-block font-weight-semi-bold">Box world tour Tokyo</span>
+                                    <span class="d-block">November 3 - 7, 2019</span>
+                                </td>
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    <span class="d-block font-weight-semi-bold">Front in '19</span>
+                                    <span class="d-block">November 12 - 14, 2019</span>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- End Table -->
+            </div>
+        </div>
+        <!-- End Tab Content -->
+        <!-- Link -->
+        <div class="text-center">
+            <a href="#">
+                <span class="text-white">View all</span>
+                <span class="btn btn-icon btn-sm btn-soft-white shadow-soft rounded-circle mx-2">
+                    <span class="fas fa-angle-right btn-icon__inner"></span>
+                </span>
+                <span class="text-white">events</span>
+            </a>
+        </div>
+        <!-- End Link -->
+    </div>
+</div>
+<!-- End Events Section -->
