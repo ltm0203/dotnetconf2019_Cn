@@ -41,5 +41,30 @@ $(document).on('ready', function () {
 
     // initialization of go to
     $.HSCore.components.HSGoTo.init('.js-go-to');
+
+
+    // initialization of text animation (typing)
+    var typed = new Typed(".u-text-animation.u-text-animation--typing", {
+        strings: ["开源", "创新", "共享"],
+        typeSpeed: 70,
+        loop: true,
+        backSpeed: 40,
+        backDelay: 2000
+    });
+
+    var typed2 = new Typed(".u-text-animation.u-text-animation--typing2", {
+        strings: ["共享", "开源", "创新"],
+        typeSpeed: 70,
+        loop: true,
+        backSpeed: 40,
+        backDelay: 2000
+    });
+    var typed3 = new Typed(".u-text-animation.u-text-animation--typing3", {
+        strings: ["创新", "共享", "开源"],
+        typeSpeed: 70,
+        loop: true,
+        backSpeed: 40,
+        backDelay: 2000
+    });
 });
 
