@@ -1,69 +1,19 @@
-﻿@{
+﻿@using DotnetconfChina.Views.Shared.Components;
+@using DotnetconfChina.Views.Shared.Components.Customer
+@using DotnetconfChina.Views.Shared.Components.Hero
+
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
+
+
+@await Component.InvokeAsync(typeof(HeroViewComponent));
+
+
  
-    <div class="d-md-flex bg-img-hero" style="background-image: url(../../assets/img/banner/img2.jpg);">
 
-        <!-- Hero Section -->
-        <div class="container space-top-3 space-top-md-5 space-top-lg-4 space-bottom-1 space-bottom-sm-2">
-            <div class="w-lg-75">
-                <h2 class="display-4 text-white font-size-md-down-5 font-weight-bold mb-5">
-                    2019 中国 .NET 开发者峰会
-                </h2>
-                <h3 class="display-3 text-white-70 font-size-md-down-5 font-weight-bold mb-5">
-                    China .NET Conf
-                    <br>
-
-                    <span class="text-warning ">
-                        <strong class="u-text-animation u-text-animation--typing"></strong>
-                        <strong class="u-text-animation u-text-animation--typing2"></strong>
-                        <strong class="u-text-animation u-text-animation--typing3"></strong>
-                    </span>
-
-                </h3>
-
-
-            </div>
-
-            <div class="row">
-                <div class="col-6 col-sm-4 mb-5 mb-sm-0">
-                    <!-- Icon Blocks -->
-                    <div class="text-center">
-
-                        <a class="btn btn-indigo btn-wide btn-pill transition-3d-hover mb-2 mb-sm-0" href="#">演讲者申请</a>
-                    </div>
-                    <!-- End Icon Blocks -->
-                </div>
-                <div class="col-6 col-sm-4 mb-5 mb-sm-0">
-                    <!-- Icon Blocks -->
-                    <div class="text-center">
-
-                        <a class="btn btn-indigo btn-wide btn-pill transition-3d-hover mb-2 mb-sm-0" href="#">志愿者申请</a>
-
-                    </div>
-                    <!-- End Icon Blocks -->
-                </div>
-                <div class="col-6 col-sm-4 mb-5 mb-sm-0">
-                    <!-- Icon Blocks -->
-                    <div class="text-center">
-
-                        <a class="btn btn-indigo btn-wide btn-pill transition-3d-hover mb-2 mb-sm-0" href="#">成为赞助商</a>
-
-                    </div>
-                    <!-- End Icon Blocks -->
-                </div>
-               
-            </div>
-            <div class="alert mt-2  bg-soft-light text-center font-size-1 rounded-0 " role="alert">
-                <strong class="text-uppercase">2019年10月26日</strong>   中国 ● 上海
-
-            </div>
-        </div>
-        <!-- End Hero Section -->
-
-       
-    </div>
 <!-- Video Section -->
 <div class="container-fluid px-lg-5 space-top-2">
     <div class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll min-height-600" data-options='{direction: "normal"}'>
@@ -134,6 +84,10 @@
     </div>
 </div>
 <!-- End Divider -->
+
+
+@await Component.InvokeAsync(typeof(CustomerViewComponent));
+
 <!-- Pricing Section -->
 <div id="pricingSection" class="container space-top-2 space-top-lg-3">
     <!-- Title -->
