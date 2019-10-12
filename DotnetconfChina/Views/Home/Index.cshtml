@@ -4,7 +4,7 @@
 
 
 @{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "2019 .NTE Conf 中国 开发者峰会官方网站";
 }
 
 
@@ -15,7 +15,7 @@
  
 
 <!-- Video Section -->
-<div class="container-fluid px-lg-5 space-top-2">
+@*<div class="container-fluid px-lg-5 ">
     <div class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll min-height-600" data-options='{direction: "normal"}'>
         <div class="dzsparallaxer--target" style="height: 130%; background-color: #000; background-image: url(../../assets/media/waves.png);"
              data-forcewidth_ratio="1.77">
@@ -24,23 +24,28 @@
                  data-hs-bgv-loop="1"></div>
         </div>
     </div>
-</div>
+</div>*@
 <!-- End Video Section -->
 <!-- Clients Section -->
-<div class="container space-2 space-lg-3">
-    <div class="row justify-content-lg-between">
-        <div class="col-lg-3 mb-5 mb-lg-0">
-            <div class="  text-center mx-md-auto mb-9">
-                <span class="btn btn-xs btn-soft-success btn-pill mb-2">活动介绍</span>
-                <h2 class="font-weight-medium">2019年.net conf</h2>
+    <div class="container  ">
+        <div class="w-lg-65 text-center mx-auto mb-5 mb-sm-9">
+            <h2 class="h1 font-weight-semi-bold">2019年.NTE Conf 介绍</h2>
+          
+        </div>
+        <div class="row justify-content-lg-between">
+            <div class="col-lg-3 mb-5 mb-lg-0">
+                <div class="  text-center mx-md-auto mb-9">
+                    <span class="btn btn-xs btn-soft-success btn-pill ">活动介绍</span>                   
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <p>
+                    2014年微软组织并成立.NET基金会，微软在成为主要的开源参与者的道路上又前进了一步。2014年以来已经有众多知名公司加入.NET基金会，在平台项目中，.NET平台上有87％贡献者其实并不在Microsoft工作。为了将.NET基金会变成一个更加多样化和成员驱动的组织，微软把.NET 的发展真正交给社区，为了让OSS真正蓬勃发展。
+                </p>
+                <p>9月23号就是2019年.NET Conf，今年它将比以往任何时候规模都更大， .NET Core 3.0已经在大会上正式发布。中国区的活动也正式提上日程，好多年都没有像这样规模的社区大会，今年举办 .NET 社区的中国峰会。 预计1000人规模，覆盖中国 14个城市的.NET 社区及机构。</p>
             </div>
         </div>
-        <div class="col-lg-9">
-            <p>2014年微软组织成立.NET基金会，微软在成为主要的开源参与者的道路上又前进了一步。2014年以来已经有众多知名公司加入.NET基金会, 仅在平台项目中，.NET平台上有87％贡献者其实不在Microsoft工作。将.NET基金会变成一个更加多样化和成员驱动的组织，微软把.NET 的发展真正交给社区，为了让OSS真正蓬勃发展。</p>
-            <p>9月23号就是2019年.net conf，今年它将比以往任何时候都更大， .NET Core 3.0将在大会上正式发布，中国区的活动也正式提上日程，好多年都没有像样社区大会，今年计划 .NET 社区的中国峰会。 预计1000人规模，覆盖中国 14个城市的.NET 社区及机构。</p>
-        </div>
     </div>
-</div>
 <!-- End Clients Section -->
 <!-- Divider -->
 <div class="container">
@@ -54,403 +59,120 @@
 @await Component.InvokeAsync(typeof(CustomerViewComponent));
 
 <!-- Pricing Section -->
-<div id="pricingSection" class="container space-top-2 space-top-lg-3">
+<div id="pricingSection" class="container ">
     <!-- Title -->
     <div class="w-lg-65 text-center mx-auto mb-5 mb-sm-9">
-        <h2 class="h1 font-weight-semi-bold">Scalable plans</h2>
-        <p>All kinds of plans that scale with your user growth</p>
+        <h2 class="h1 font-weight-semi-bold">大会门票</h2>
+        
     </div>
     <!-- End Title -->
 
     <div class="w-lg-75 mx-lg-auto">
         <div class="row align-items-sm-end mx-n2 mb-7">
-            <div class="col-sm-6 col-md-4 px-2 mb-3 mb-md-0">
+            <div class="col-sm-6 col-md-6 px-2 mb-3 mb-md-0">
                 <!-- Pricing -->
                 <div class="card text-center shadow">
                     <div class="card-header border-0 pt-5 px-5">
                         <img class="mb-2" src="~/assets/svg/components/one-dot.svg" alt="Image Description" width="60">
-                        <h4 class="h6 mb-3">Starter</h4>
-                        <span class="font-size-2 font-weight-semi-bold">Free</span>
+                        <h4 class="h6 mb-3">超级早鸟票</h4>
+                        <span class="font-size-2 font-weight-semi-bold">99元</span>
                     </div>
                     <div class="card-body pt-0 pb-5 px-5">
                         <ul class="list-group list-group-flush list-group-borderless text-secondary mb-4">
-                            <li class="list-group-item">Community support</li>
-                            <li class="list-group-item">400+ pages</li>
+                            
+                            <li class="list-group-item">超级早鸟票及社区特价票，10月20号前购买，需要审核。可参加2019年11月9日大会， 获得大会资料，茶歇。</li>
                         </ul>
-                        <button type="button" class="btn btn-sm btn-block btn-outline-primary transition-3d-hover">Create Account</button>
+                        <a href="https://www.huodongxing.com/event/4514005355700" target="_blank" class="btn btn-sm btn-block btn-outline-primary transition-3d-hover">购买</a>
                     </div>
                 </div>
             </div>
 
-            <div class="col-sm-6 col-md-4 px-2 mb-3 mb-md-0">
+            <div class="col-sm-6 col-md-6 px-2 mb-3 mb-md-0">
                 <!-- Pricing -->
                 <div class="card text-center shadow">
                     <div class="card-header border-0 pt-5 px-5">
-                        <img class="mb-2" src="~/assets/svg/components/two-dots.svg" alt="Image Description" width="60">
-                        <h4 class="h6 mb-3">Individual</h4>
-                        <span class="font-size-2 font-weight-semi-bold">$59</span>
+                        <img class="mb-2" src="~/assets/svg/components/one-dot.svg" alt="Image Description" width="60">
+                        <h4 class="h6 mb-3">早鸟票</h4>
+                        <span class="font-size-2 font-weight-semi-bold">199元</span>
                     </div>
                     <div class="card-body pt-0 pb-5 px-5">
                         <ul class="list-group list-group-flush list-group-borderless text-secondary mb-4">
-                            <li class="list-group-item">Community support</li>
-                            <li class="list-group-item">400+ pages</li>
-                            <li class="list-group-item">100+ header variations</li>
+                            <li class="list-group-item">截止日期：10月19日</li>
+                            <li class="list-group-item">早鸟票，10月25号前购买, 限量300张，先到先得。可参加2019年11月9日大会， 获得大会资料，茶歇。</li>
                         </ul>
-                        <button type="button" class="btn btn-sm btn-block btn-primary transition-3d-hover">Try Free for 14 days</button>
+                        <a href="https://www.huodongxing.com/event/4514005355700" target="_blank" class="btn btn-sm btn-block btn-outline-primary transition-3d-hover">购买</a>
                     </div>
                 </div>
-                <!-- End Pricing -->
             </div>
-
-            <div class="col-sm-6 col-md-4 px-2">
+            <div class="col-sm-6 col-md-6 px-2 mb-3 mb-md-0">
                 <!-- Pricing -->
                 <div class="card text-center shadow">
                     <div class="card-header border-0 pt-5 px-5">
-                        <img class="mb-2" src="~/assets/svg/components/three-dots.svg" alt="Image Description" width="60">
-                        <h4 class="h6 mb-3">Enterprise</h4>
-                        <span class="font-size-2 font-weight-semi-bold">$599</span>
+                        <img class="mb-2" src="~/assets/svg/components/one-dot.svg" alt="Image Description" width="60">
+                        <h4 class="h6 mb-3">参会票</h4>
+                        <span class="font-size-2 font-weight-semi-bold">299元</span>
                     </div>
                     <div class="card-body pt-0 pb-5 px-5">
                         <ul class="list-group list-group-flush list-group-borderless text-secondary mb-4">
-                            <li class="list-group-item">Community support</li>
-                            <li class="list-group-item">400+ pages</li>
-                            <li class="list-group-item">100+ header variations</li>
-                            <li class="list-group-item">20+ home page options</li>
+                          
+                            <li class="list-group-item">大会全程参与票，截至活动前一天中午12点。可参加2019年11月9日大会， 获得大会资料，茶歇及大会周边。</li>
                         </ul>
-                        <button type="button" class="btn btn-sm btn-block btn-primary transition-3d-hover">Try Free for 14 days</button>
+                        <a href="https://www.huodongxing.com/event/4514005355700" target="_blank" class="btn btn-sm btn-block btn-outline-primary transition-3d-hover">购买</a>
                     </div>
                 </div>
-                <!-- End Pricing -->
             </div>
+            <div class="col-sm-6 col-md-6 px-2 mb-3 mb-md-0">
+                <!-- Pricing -->
+                <div class="card text-center shadow">
+                    <div class="card-header border-0 pt-5 px-5">
+                        <img class="mb-2" src="~/assets/svg/components/one-dot.svg" alt="Image Description" width="60">
+                        <h4 class="h6 mb-3">VIP票</h4>
+                        <span class="font-size-2 font-weight-semi-bold">999元</span>
+                    </div>
+                    <div class="card-body pt-0 pb-5 px-5">
+                        <ul class="list-group list-group-flush list-group-borderless text-secondary mb-4">                         
+                            <li class="list-group-item">可参加2019年11月9日大会，安排大会VIP座位，参加【 .NET 之夜】晚宴聚会，获得大会资料，茶歇及大会周边。</li>
+                        </ul>
+                        <a href="https://www.huodongxing.com/event/4514005355700" target="_blank" class="btn btn-sm btn-block btn-outline-primary transition-3d-hover">购买</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
-        <!-- Link -->
-        <div class="text-center">
-            <a href="../pages/careers.html">
-                <span class="text-secondary">Contact us for</span>
-                <span class="btn btn-icon btn-sm btn-soft-primary rounded-circle mx-2">
-                    <span class="fas fa-angle-right btn-icon__inner"></span>
-                </span>
-                <span class="text-secondary">custom plans</span>
-            </a>
-        </div>
-        <!-- End Link -->
+      
     </div>
 </div>
 <!-- End Pricing Section -->
 <!-- Events Section -->
-<div id="eventsSection" class="bg-primary rounded mx-3 mx-md-8">
-    <div class="container space-2 space-lg-3">
-        <!-- Title -->
-        <div class="w-lg-65 text-center text-white mx-auto mb-5 mb-sm-7">
-            <h2 class="h1 font-weight-semi-bold">Front events</h2>
-        </div>
-        <!-- End Title -->
-        <!-- Nav -->
-        <div class="w-lg-65 mx-lg-auto mb-3">
-            <ul class="nav nav-border-white justify-content-center" role="tablist">
-                <li class="nav-item">
-                    <a class="nav-link active" id="pills-one-code-sample-tab" data-toggle="pill" href="#pills-one-code-sample" role="tab" aria-controls="pills-one-code-sample" aria-selected="true">
-                        This week
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="pills-two-code-sample-tab" data-toggle="pill" href="#pills-two-code-sample" role="tab" aria-controls="pills-two-code-sample" aria-selected="false">
-                        Next week
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="pills-three-code-sample-tab" data-toggle="pill" href="#pills-three-code-sample" role="tab" aria-controls="pills-three-code-sample" aria-selected="false">
-                        This month
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <!-- End Nav -->
-        <!-- Tab Content -->
-        <div class="tab-content">
-            <div class="tab-pane fade pt-5 show active" id="pills-one-code-sample" role="tabpanel" aria-labelledby="pills-one-code-sample-tab">
-                <!-- Table -->
-                <div class="table-responsive-lg mb-9">
-                    <table class="table table-bordered table-light-bordered text-white">
-                        <thead>
-                            <tr>
-                                <th scope="col">Calendar</th>
-                                <th scope="col">Mon</th>
-                                <th scope="col">Tue</th>
-                                <th scope="col">Wed</th>
-                                <th scope="col">Thr</th>
-                                <th scope="col">Fri</th>
-                                <th scope="col">Sat</th>
-                                <th scope="col">Sun</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">12PM</th>
-                                <td class="bg-white text-dark">
-                                    <span class="d-block font-weight-semi-bold">How great leaders inspire action</span>
-                                    <span class="d-block">July 9, 2019</span>
-                                </td>
-                                <td></td>
-                                <td>
-                                    <span class="d-block font-weight-semi-bold">The power of introverts</span>
-                                    <span class="d-block">July 18 - 19, 2019</span>
-                                </td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td class="bg-white text-dark">
-                                    <span class="d-block font-weight-semi-bold">The happy secret to better work</span>
-                                    <span class="d-block">July 23, 2019</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">01PM</th>
-                                <td></td>
-                                <td>
-                                    <span class="d-block font-weight-semi-bold">UI/UX</span>
-                                    <span class="d-block">July 31 - August 1, 2019</span>
-                                </td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>
-                                    <span class="d-block font-weight-semi-bold">Front best of breed</span>
-                                    <span class="d-block">August 8, 2019</span>
-                                </td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">04PM</th>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td class="bg-white text-dark">
-                                    <span class="d-block font-weight-semi-bold">Why Front?</span>
-                                    <span class="d-block">October 20 - 24, 2019</span>
-                                </td>
-                                <td></td>
-                                <td>
-                                    <span class="d-block font-weight-semi-bold">Dubai Front Meetup</span>
-                                    <span class="d-block">October 28 - 31, 2019</span>
-                                </td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">06PM</th>
-                                <td></td>
-                                <td>
-                                    <span class="d-block font-weight-semi-bold">Box world tour Tokyo</span>
-                                    <span class="d-block">November 3 - 7, 2019</span>
-                                </td>
-                                <td></td>
-                                <td></td>
-                                <td>
-                                    <span class="d-block font-weight-semi-bold">Front in '19</span>
-                                    <span class="d-block">November 12 - 14, 2019</span>
-                                </td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <!-- End Table -->
-            </div>
+<div class="container  space-2">
+    <!-- Title -->
+    <div class="w-lg-65 text-center mx-auto mb-5 mb-sm-9">
+        <h2 class="h1 font-weight-semi-bold">大会日程 </h2>
 
-            <div class="tab-pane fade pt-5" id="pills-two-code-sample" role="tabpanel" aria-labelledby="pills-two-code-sample-tab">
-                <!-- Table -->
-                <div class="table-responsive-lg mb-9">
-                    <table class="table table-bordered table-light-bordered text-white">
-                        <thead>
-                            <tr>
-                                <th scope="col">Calendar</th>
-                                <th scope="col">Mon</th>
-                                <th scope="col">Tue</th>
-                                <th scope="col">Wed</th>
-                                <th scope="col">Thr</th>
-                                <th scope="col">Fri</th>
-                                <th scope="col">Sat</th>
-                                <th scope="col">Sun</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">12PM</th>
-                                <td>
-                                    <span class="d-block font-weight-semi-bold">How great leaders inspire action</span>
-                                    <span class="d-block">July 9, 2019</span>
-                                </td>
-                                <td></td>
-                                <td>
-                                    <span class="d-block font-weight-semi-bold">The power of introverts</span>
-                                    <span class="d-block">July 18 - 19, 2019</span>
-                                </td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>
-                                    <span class="d-block font-weight-semi-bold">The happy secret to better work</span>
-                                    <span class="d-block">July 23, 2019</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">01PM</th>
-                                <td></td>
-                                <td class="bg-white text-dark">
-                                    <span class="d-block font-weight-semi-bold">UI/UX</span>
-                                    <span class="d-block">July 31 - August 1, 2019</span>
-                                </td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>
-                                    <span class="d-block font-weight-semi-bold">Front best of breed</span>
-                                    <span class="d-block">August 8, 2019</span>
-                                </td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">04PM</th>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>
-                                    <span class="d-block font-weight-semi-bold">Why Front?</span>
-                                    <span class="d-block">October 20 - 24, 2019</span>
-                                </td>
-                                <td></td>
-                                <td>
-                                    <span class="d-block font-weight-semi-bold">Dubai Front Meetup</span>
-                                    <span class="d-block">October 28 - 31, 2019</span>
-                                </td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">06PM</th>
-                                <td></td>
-                                <td>
-                                    <span class="d-block font-weight-semi-bold">Box world tour Tokyo</span>
-                                    <span class="d-block">November 3 - 7, 2019</span>
-                                </td>
-                                <td></td>
-                                <td></td>
-                                <td class="bg-white text-dark">
-                                    <span class="d-block font-weight-semi-bold">Front in '19</span>
-                                    <span class="d-block">November 12 - 14, 2019</span>
-                                </td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <!-- End Table -->
-            </div>
-
-            <div class="tab-pane fade pt-5" id="pills-three-code-sample" role="tabpanel" aria-labelledby="pills-three-code-sample-tab">
-                <!-- Table -->
-                <div class="table-responsive-lg mb-9">
-                    <table class="table table-bordered table-light-bordered text-white">
-                        <thead>
-                            <tr>
-                                <th scope="col">Calendar</th>
-                                <th scope="col">Sep 6th</th>
-                                <th scope="col">Sep 13th</th>
-                                <th scope="col">Sep 19th</th>
-                                <th scope="col">Sep 21th</th>
-                                <th scope="col">Sep 25th</th>
-                                <th scope="col">Sep 29th</th>
-                                <th scope="col">Sep 30th</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">12PM</th>
-                                <td>
-                                    <span class="d-block font-weight-semi-bold">How great leaders inspire action</span>
-                                    <span class="d-block">July 9, 2019</span>
-                                </td>
-                                <td></td>
-                                <td class="bg-white text-dark">
-                                    <span class="d-block font-weight-semi-bold">The power of introverts</span>
-                                    <span class="d-block">July 18 - 19, 2019</span>
-                                </td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>
-                                    <span class="d-block font-weight-semi-bold">The happy secret to better work</span>
-                                    <span class="d-block">July 23, 2019</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">01PM</th>
-                                <td></td>
-                                <td>
-                                    <span class="d-block font-weight-semi-bold">UI/UX</span>
-                                    <span class="d-block">July 31 - August 1, 2019</span>
-                                </td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>
-                                    <span class="d-block font-weight-semi-bold">Front best of breed</span>
-                                    <span class="d-block">August 8, 2019</span>
-                                </td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">04PM</th>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>
-                                    <span class="d-block font-weight-semi-bold">Why Front?</span>
-                                    <span class="d-block">October 20 - 24, 2019</span>
-                                </td>
-                                <td></td>
-                                <td class="bg-white text-dark">
-                                    <span class="d-block font-weight-semi-bold">Dubai Front Meetup</span>
-                                    <span class="d-block">October 28 - 31, 2019</span>
-                                </td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">06PM</th>
-                                <td></td>
-                                <td class="bg-white text-dark">
-                                    <span class="d-block font-weight-semi-bold">Box world tour Tokyo</span>
-                                    <span class="d-block">November 3 - 7, 2019</span>
-                                </td>
-                                <td></td>
-                                <td></td>
-                                <td>
-                                    <span class="d-block font-weight-semi-bold">Front in '19</span>
-                                    <span class="d-block">November 12 - 14, 2019</span>
-                                </td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <!-- End Table -->
-            </div>
-        </div>
-        <!-- End Tab Content -->
-        <!-- Link -->
-        <div class="text-center">
-            <a href="#">
-                <span class="text-white">View all</span>
-                <span class="btn btn-icon btn-sm btn-soft-white shadow-soft rounded-circle mx-2">
-                    <span class="fas fa-angle-right btn-icon__inner"></span>
-                </span>
-                <span class="text-white">events</span>
-            </a>
-        </div>
-        <!-- End Link -->
     </div>
+    <!-- End Title -->
+
+
+
+    <div id="eventsSection" class="bg-primary rounded mx-3 mx-md-8">
+       
+        <div class="container space-2 space-lg-3">
+            <!-- Title -->
+            <div class="w-lg-65 text-center text-white mx-auto mb-5 mb-sm-7">
+                <h2 class="h1 font-weight-semi-bold"> 即将更新</h2>
+            </div>
+            <!-- End Title -->
+            <!-- Nav -->
+             
+            <!-- End Nav -->
+            <!-- Tab Content -->
+             
+            <!-- End Tab Content -->
+            <!-- Link -->
+             
+            <!-- End Link -->
+        </div>
+    </div>
+    <!-- End Events Section -->
 </div>
-<!-- End Events Section -->
