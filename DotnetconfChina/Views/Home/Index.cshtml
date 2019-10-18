@@ -1,6 +1,11 @@
 ﻿@using DotnetconfChina.Views.Shared.Components;
 @using DotnetconfChina.Views.Shared.Components.Customer
 @using DotnetconfChina.Views.Shared.Components.Hero
+@using DotnetconfChina.Views.Shared.Components.Producer
+@using DotnetconfChina.Views.Shared.Components.Schedule
+@using DotnetconfChina.Views.Shared.Components.Ticket
+@using DotnetconfChina.Views.Shared.Components.Speaker
+
 
 
 @{
@@ -12,40 +17,40 @@
 @await Component.InvokeAsync(typeof(HeroViewComponent))
 
 
- 
+
 
 <!-- Video Section -->
 @*<div class="container-fluid px-lg-5 ">
-    <div class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll min-height-600" data-options='{direction: "normal"}'>
-        <div class="dzsparallaxer--target" style="height: 130%; background-color: #000; background-image: url(../../assets/media/waves.png);"
-             data-forcewidth_ratio="1.77">
-            <div class="js-bg-video position-absolute top-0 right-0 bottom-0 left-0 w-100 h-100"
-                 data-hs-bgv-path="../../assets/media/waves"
-                 data-hs-bgv-loop="1"></div>
+        <div class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll min-height-600" data-options='{direction: "normal"}'>
+            <div class="dzsparallaxer--target" style="height: 130%; background-color: #000; background-image: url(../../assets/media/waves.png);"
+                 data-forcewidth_ratio="1.77">
+                <div class="js-bg-video position-absolute top-0 right-0 bottom-0 left-0 w-100 h-100"
+                     data-hs-bgv-path="../../assets/media/waves"
+                     data-hs-bgv-loop="1"></div>
+            </div>
         </div>
-    </div>
-</div>*@
+    </div>*@
 <!-- End Video Section -->
 <!-- Clients Section -->
-    <div class="container  ">
-        <div class="w-lg-65 text-center mx-auto mb-5 mb-sm-9">
-            <h2 class="h1 font-weight-semi-bold">2019年.NTE Conf 介绍</h2>
-          
+<div class="container">
+    <div class="w-lg-65 text-center mx-auto mb-5 mb-sm-9">
+        <h2 class="h1 font-weight-semi-bold">2019年.NTE Conf 介绍</h2>
+
+    </div>
+    <div class="row justify-content-lg-between">
+        <div class="col-lg-3 mb-5 mb-lg-0">
+            <div class="  text-center mx-md-auto mb-9">
+                <span class="btn btn-xs btn-soft-success btn-pill ">活动介绍</span>
+            </div>
         </div>
-        <div class="row justify-content-lg-between">
-            <div class="col-lg-3 mb-5 mb-lg-0">
-                <div class="  text-center mx-md-auto mb-9">
-                    <span class="btn btn-xs btn-soft-success btn-pill ">活动介绍</span>                   
-                </div>
-            </div>
-            <div class="col-lg-9">
-                <p>
-                    2014年微软组织并成立.NET基金会，微软在成为主要的开源参与者的道路上又前进了一步。2014年以来已经有众多知名公司加入.NET基金会，在平台项目中，.NET平台上有87％贡献者其实并不在Microsoft工作。为了将.NET基金会变成一个更加多样化和成员驱动的组织，微软把.NET 的发展真正交给社区，为了让OSS真正蓬勃发展。
-                </p>
-                <p>9月23号就是2019年.NET Conf，今年它将比以往任何时候规模都更大， .NET Core 3.0已经在大会上正式发布。中国区的活动也正式提上日程，好多年都没有像这样规模的社区大会，今年举办 .NET 社区的中国峰会。 预计1000人规模，覆盖中国 14个城市的.NET 社区及机构。</p>
-            </div>
+        <div class="col-lg-9">
+            <p>
+                2014年微软组织并成立.NET基金会，微软在成为主要的开源参与者的道路上又前进了一步。2014年以来已经有众多知名公司加入.NET基金会，在平台项目中，.NET平台上有87％贡献者其实并不在Microsoft工作。为了将.NET基金会变成一个更加多样化和成员驱动的组织，微软把.NET 的发展真正交给社区，为了让OSS真正蓬勃发展。
+            </p>
+            <p>9月23号就是2019年.NET Conf，今年它将比以往任何时候规模都更大， .NET Core 3.0已经在大会上正式发布。中国区的活动也正式提上日程，好多年都没有像这样规模的社区大会，今年举办 .NET 社区的中国峰会。 预计1000人规模，覆盖中国 14个城市的.NET 社区及机构。</p>
         </div>
     </div>
+</div>
 <!-- End Clients Section -->
 <!-- Divider -->
 <div class="container">
@@ -54,125 +59,33 @@
     </div>
 </div>
 <!-- End Divider -->
+<!-- Producer Section -->
+<div id="producerSection">
+    @await Component.InvokeAsync(typeof(ProducerViewComponent));
+</div>
+<!-- End Producer -->
+<!-- Speaker Section -->
+<div id="speakerSection" class="container  space-2">
+
+    @await Component.InvokeAsync(typeof(SpeakerViewComponent));
 
 
+</div>
+<!-- End Speaker Section -->
+<!-- Ticket Section -->
+<div id="ticketSection" class="container ">
+    @await Component.InvokeAsync(typeof(TicketViewComponent));
+
+</div>
+<!-- End Ticket Section -->
+<!-- Schedule Section -->
+<div id="scheduleSection" class="container  space-2">
+
+    @await Component.InvokeAsync(typeof(ScheduleViewComponent));
+
+
+</div>
+<!-- End Schedule Section -->
+<!-- Customer Section -->
 @await Component.InvokeAsync(typeof(CustomerViewComponent));
-
-<!-- Pricing Section -->
-<div id="pricingSection" class="container ">
-    <!-- Title -->
-    <div class="w-lg-65 text-center mx-auto mb-5 mb-sm-9">
-        <h2 class="h1 font-weight-semi-bold">大会门票</h2>
-        
-    </div>
-    <!-- End Title -->
-
-    <div class="w-lg-75 mx-lg-auto">
-        <div class="row align-items-sm-end mx-n2 mb-7">
-            <div class="col-sm-6 col-md-6 px-2 mb-3 mb-md-0">
-                <!-- Pricing -->
-                <div class="card text-center shadow">
-                    <div class="card-header border-0 pt-5 px-5">
-                        <img class="mb-2" src="~/assets/svg/components/one-dot.svg" alt="Image Description" width="60">
-                        <h4 class="h6 mb-3">超级早鸟票</h4>
-                        <span class="font-size-2 font-weight-semi-bold">99元</span>
-                    </div>
-                    <div class="card-body pt-0 pb-5 px-5">
-                        <ul class="list-group list-group-flush list-group-borderless text-secondary mb-4">
-                            
-                            <li class="list-group-item">超级早鸟票及社区特价票，10月20号前购买，需要审核。可参加2019年11月9日大会， 获得大会资料，茶歇。</li>
-                        </ul>
-                        <a href="https://www.huodongxing.com/event/4514005355700" target="_blank" class="btn btn-sm btn-block btn-outline-primary transition-3d-hover">购买</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-md-6 px-2 mb-3 mb-md-0">
-                <!-- Pricing -->
-                <div class="card text-center shadow">
-                    <div class="card-header border-0 pt-5 px-5">
-                        <img class="mb-2" src="~/assets/svg/components/one-dot.svg" alt="Image Description" width="60">
-                        <h4 class="h6 mb-3">早鸟票</h4>
-                        <span class="font-size-2 font-weight-semi-bold">199元</span>
-                    </div>
-                    <div class="card-body pt-0 pb-5 px-5">
-                        <ul class="list-group list-group-flush list-group-borderless text-secondary mb-4">
-                            <li class="list-group-item">截止日期：10月19日</li>
-                            <li class="list-group-item">早鸟票，10月25号前购买, 限量300张，先到先得。可参加2019年11月9日大会， 获得大会资料，茶歇。</li>
-                        </ul>
-                        <a href="https://www.huodongxing.com/event/4514005355700" target="_blank" class="btn btn-sm btn-block btn-outline-primary transition-3d-hover">购买</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-6 px-2 mb-3 mb-md-0">
-                <!-- Pricing -->
-                <div class="card text-center shadow">
-                    <div class="card-header border-0 pt-5 px-5">
-                        <img class="mb-2" src="~/assets/svg/components/one-dot.svg" alt="Image Description" width="60">
-                        <h4 class="h6 mb-3">参会票</h4>
-                        <span class="font-size-2 font-weight-semi-bold">299元</span>
-                    </div>
-                    <div class="card-body pt-0 pb-5 px-5">
-                        <ul class="list-group list-group-flush list-group-borderless text-secondary mb-4">
-                          
-                            <li class="list-group-item">大会全程参与票，截至活动前一天中午12点。可参加2019年11月9日大会， 获得大会资料，茶歇及大会周边。</li>
-                        </ul>
-                        <a href="https://www.huodongxing.com/event/4514005355700" target="_blank" class="btn btn-sm btn-block btn-outline-primary transition-3d-hover">购买</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-6 px-2 mb-3 mb-md-0">
-                <!-- Pricing -->
-                <div class="card text-center shadow">
-                    <div class="card-header border-0 pt-5 px-5">
-                        <img class="mb-2" src="~/assets/svg/components/one-dot.svg" alt="Image Description" width="60">
-                        <h4 class="h6 mb-3">VIP票</h4>
-                        <span class="font-size-2 font-weight-semi-bold">999元</span>
-                    </div>
-                    <div class="card-body pt-0 pb-5 px-5">
-                        <ul class="list-group list-group-flush list-group-borderless text-secondary mb-4">                         
-                            <li class="list-group-item">可参加2019年11月9日大会，安排大会VIP座位，参加【 .NET 之夜】晚宴聚会，获得大会资料，茶歇及大会周边。</li>
-                        </ul>
-                        <a href="https://www.huodongxing.com/event/4514005355700" target="_blank" class="btn btn-sm btn-block btn-outline-primary transition-3d-hover">购买</a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-      
-    </div>
-</div>
-<!-- End Pricing Section -->
-<!-- Events Section -->
-<div class="container  space-2">
-    <!-- Title -->
-    <div class="w-lg-65 text-center mx-auto mb-5 mb-sm-9">
-        <h2 class="h1 font-weight-semi-bold">大会日程 </h2>
-
-    </div>
-    <!-- End Title -->
-
-
-
-    <div id="eventsSection" class="bg-primary rounded mx-3 mx-md-8">
-       
-        <div class="container space-2 space-lg-3">
-            <!-- Title -->
-            <div class="w-lg-65 text-center text-white mx-auto mb-5 mb-sm-7">
-                <h2 class="h1 font-weight-semi-bold"> 即将更新</h2>
-            </div>
-            <!-- End Title -->
-            <!-- Nav -->
-             
-            <!-- End Nav -->
-            <!-- Tab Content -->
-             
-            <!-- End Tab Content -->
-            <!-- Link -->
-             
-            <!-- End Link -->
-        </div>
-    </div>
-    <!-- End Events Section -->
-</div>
+<!-- End Customer Section -->
