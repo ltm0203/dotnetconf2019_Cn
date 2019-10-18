@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace DotnetconfChina.Views.Shared.Components.Heroback
+namespace DotnetconfChina.Views.Shared.Components.Publsher
 {
-    public class TicketViewComponent : ViewComponent
+    public class PublsherViewComponent : ViewComponent
     {
 
 
