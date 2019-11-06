@@ -70,16 +70,13 @@
 
 </div>
 <div id="speakerSection">
-    
+
     @await Component.InvokeAsync(typeof(SpeakerViewComponent))
     <!-- End Speaker Section -->
 </div>
 
 <
 <!-- Events Section -->
-
-
-
 <!-- Schedule Section -->
 <div id="scheduleSection" class="container  space-2">
 
@@ -88,52 +85,10 @@
 
 </div>
 <!-- End Schedule Section -->
-<!--社区合作伙伴-->
-<div class="">
-
-    <div class="w-lg-65 text-center mx-auto mb-5 mb-sm-9">
-        <h2 class="h1 font-weight-semi-bold">社区合作伙伴 </h2>
-
-    </div>
-    <div class="w-lg-75 mx-lg-auto">
-
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-4">
-                    <div style="text-align: center; height: 150px; padding: 5px">
-                        <img src="~/assets/img/Community partners logo/01.jpg" width="300" height="150" />
-                    </div>
-                    <div style="text-align: center">
-                        <br />
-                        <a href="#">胶东开发者社区</a>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div style="text-align: center; height: 150px; padding: 5px">
-                        <img src="~/assets/img/Community partners logo/02.jpg" width="300" height="150" />
-                    </div>
-                    <div style="text-align: center">
-                        <br />
-                        <a href="#">微软技术俱乐部（苏州）</a>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div style="text-align: center; height: 150px; padding: 5px">
-                        <img src="~/assets/img/Community partners logo/03.jpg" width="300" height="150" />
-                    </div>
-                    <div style="text-align: center">
-                        <br />
-                        <a href="#">.NET Core Community (NCC)</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- End Speaker Section -->
-<!-- Ticket Section -->
-<!-- End Ticket Section -->
 <!-- Customer Section -->
 @await Component.InvokeAsync(typeof(CustomerViewComponent));
 <!-- End Customer Section -->
+<!--社区合作伙伴-->
+@await Component.InvokeAsync(typeof(CommunityViewComponent));
+
+<!-- End 社区合作伙伴Section -->

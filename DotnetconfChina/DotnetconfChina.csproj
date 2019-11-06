@@ -13,7 +13,6 @@
 
 
   <ItemGroup>
-    <Folder Include="wwwroot\assets\img\customer\" />
     <Folder Include="wwwroot\assets\img\Speaker\" />
   </ItemGroup>
 
