@@ -60,317 +60,26 @@
     </div>
 </div>
 <!-- End Divider -->
-<!-- Producer Section -->
+<!--出票人-->
 <div id="producerSection">
-    @await Component.InvokeAsync(typeof(ProducerViewComponent));
+    @await Component.InvokeAsync(typeof(ProducerViewComponent))
 </div>
 <!-- End Producer -->
 <div id="ticketSection" class="container ">
-    @await Component.InvokeAsync(typeof(TicketViewComponent));
-@*<div class="container">
-        <div class="w-lg-65 mx-lg-auto">
-            <hr class="my-0">
-        </div>
-    </div>*@
+    @await Component.InvokeAsync(typeof(TicketViewComponent))
 
-<!--================ Innovation section Start =================-->
+</div>
+<div id="speakerSection">
+    
+    @await Component.InvokeAsync(typeof(SpeakerViewComponent))
+    <!-- End Speaker Section -->
 </div>
 
-<!-- Speaker Section -->
- 
-
-      
-@await Component.InvokeAsync(typeof(SpeakerViewComponent));
-<!-- End Pricing Section -->
+<
 <!-- Events Section -->
-<div class="container  space-2">
-    <div id="eventsSection" class=" rounded mx-3 mx-md-8">
-        
-        <div class="container space-2 space-lg-3">
-            <!-- Title -->
-            <h3 style="text-align:center"><strong>China .NET Conf 2019 中国 .NET 峰会</strong></h3>
-            <div class="w-lg-65 text-center text-white mx-auto mb-5 mb-sm-7">
-                <!--<h2 class="h1 font-weight-semi-bold"> 即将更新</h2>-->
-                
-                <table class="table table-bordered">
-                    <thead>
-                        <tr>
-                            <th scope="col">开始</th>
-                            <th scope="col">时间</th>
-                            <th scope="col">耗时</th>
-                            <th scope="col">内容</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th>8:00</th>
-                            <td>9:00</td>
-                            <td>1:00</td>
-                            <td>签到</td>
-                        </tr>
-                        <tr>
-                            <th>9:00</th>
-                            <td>9:20</td>
-                            <td>0:20</td>
-                            <td>大咖视频</td>
-                        </tr>
-                        <tr>
-                            <th></th>
-                            <td></td>
-                            <td></td>
-                            <td>主持人：</td>
-                        </tr>
-                        <tr>
-                            <th>9:20</th>
-                            <td>10:00</td>
-                            <td>0:40</td>
-                            <td>微软赞助演讲 or 大咖嘉宾演讲</td>
-                        </tr>
-                        <tr>
-                            <th>10:00</th>
-                            <td>10:05</td>
-                            <td>0:05</td>
-                            <td>问答环节, 休息或主持人串场</td>
-                        </tr>
-                        <tr>
-                            <th>10:05</th>
-                            <td>10:45</td>
-                            <td>0:40</td>
-                            <td>待定主题</td>
-                        </tr>
-                        <tr>
-                            <th>10:45</th>
-                            <td>10:50</td>
-                            <td>0:05</td>
-                            <td>问答环节, 休息或主持人串场</td>
-                        </tr>
-                        <tr>
-                            <td>10:50</td>
-                            <td>11:30</td>
-                            <td>0:40</td>
-                            <td>ASP.NET Core微服务 on k8s 电商案例以及工程实践</td>
-                        </tr>
-                        <tr>
-                            <td>11:30</td>
-                            <td>11:35</td>
-                            <td>0:05</td>
-                            <td>问答环节, 休息或主持人串场</td>
-                        </tr>
-                        <tr>
-                            <td>11:35</td>
-                            <td>12:15</td>
-                            <td>0:40</td>
-                            <td>在.NET Core下的机器学习</td>
-                        </tr>
-                        <tr>
-                            <td>12:15</td>
-                            <td>12:20</td>
-                            <td>0:05</td>
-                            <td>问答环节, 休息或主持人串场</td>
-                        </tr>
-                        <tr>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td>12:20</td>
-                            <td>13:30</td>
-                            <td>1:10</td>
-                            <td>午休时间</td>
-                        </tr>
-                        <tr>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>分会场A&nbsp;&nbsp;|&nbsp;&nbsp;分会场B&nbsp;&nbsp;|&nbsp;&nbsp;分会场C</td>
-                        </tr>
-                        <tr>
-                            <td>13:30</td>
-                            <td>14:00</td>
-                            <td>0:30</td>
-                            <td>&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td>14:00</td>
-                            <td>14:05</td>
-                            <td>0:05</td>
-                            <td>答疑问答环节</td>
-                        </tr>
-                        <tr>
-                            <td>14:05</td>
-                            <td>14:10</td>
-                            <td>0:05</td>
-                            <td>休息</td>
-                        </tr>
-                        <tr>
-                            <td>14:10</td>
-                            <td>14:40</td>
-                            <td>0:30</td>
-                            <td>&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td>14:40</td>
-                            <td>14:45</td>
-                            <td>0:05</td>
-                            <td>答疑问答环节</td>
-                        </tr>
-                        <tr>
-                            <td>14:45</td>
-                            <td>14:50</td>
-                            <td>14:50</td>
-                            <td>休息</td>
-                        </tr>
-                        <tr>
-                            <td>14:50</td>
-                            <td>15:20</td>
-                            <td>0:30</td>
-                            <td>&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td>15:20</td>
-                            <td>15:25</td>
-                            <td>0:05</td>
-                            <td>答疑问答环节</td>
-                        </tr>
-                        <tr>
-                            <td>15:25</td>
-                            <td>15:30</td>
-                            <td>0:05</td>
-                            <td>休息</td>
-                        </tr>
-                        <tr>
-                            <td>15:30</td>
-                            <td>16:00</td>
-                            <td>0:30</td>
-                            <td>&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td>16:00</td>
-                            <td>16:05</td>
-                            <td>0:05</td>
-                            <td>答疑问答环节</td>
-                        </tr>
-                        <tr>
-                            <td>16:05</td>
-                            <td>16:10</td>
-                            <td>0:05</td>
-                            <td>休息</td>
-                        </tr>
-                        <tr>
-                            <td>16:10</td>
-                            <td>16:40</td>
-                            <td>0:30</td>
-                            <td>&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td>16:40</td>
-                            <td>16:45</td>
-                            <td>0:05</td>
-                            <td>答疑问答环节</td>
-                        </tr>
-                        <tr>
-                            <td>16:45</td>
-                            <td>16:50</td>
-                            <td>0:05</td>
-                            <td>休息</td>
-                        </tr>
-                        <tr>
-                            <td>16:50</td>
-                            <td>17:00</td>
-                            <td>0:10</td>
-                            <td>&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td>17:00</td>
-                            <td>17:10</td>
-                            <td>0:10</td>
-                            <td>&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td>17:10</td>
-                            <td>17:20</td>
-                            <td>0:10</td>
-                            <td>&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td>17:20</td>
-                            <td>17:30</td>
-                            <td>0:10</td>
-                            <td>&nbsp;</td>
-                        </tr>
-                    </tbody>
-                </table>
-               </div>
-            <!-- End Title -->
-            <!-- Nav -->
-             
-            <!-- End Nav -->
-            <!-- Tab Content -->
-             
-            <!-- End Tab Content -->
-            <!-- Link -->
-             
-            <!-- End Link -->
-        </div>
-    </div>
-    <!-- End Events Section -->
-</div>
 
-<!--社区合作伙伴-->
-<div class="">
 
-    <div class="w-lg-65 text-center mx-auto mb-5 mb-sm-9">
-        <h2 class="h1 font-weight-semi-bold">社区合作伙伴 </h2>
 
-    </div>
-    <div class="w-lg-75 mx-lg-auto">
-        
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-4">
-                    <div style="text-align: center; height: 150px; padding: 5px">
-                        <img src="~/assets/img/Community partners logo/01.jpg" width="300" height="150"/>
-                    </div>
-                    <div style="text-align: center">
-                        <br/>
-                        <a href="#">胶东开发者社区</a>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div style="text-align: center; height: 150px; padding: 5px">
-                        <img src="~/assets/img/Community partners logo/02.jpg" width="300" height="150"/>
-                    </div>
-                    <div style="text-align: center">
-                        <br/>
-                        <a href="#">微软技术俱乐部（苏州）</a>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div style="text-align: center; height: 150px; padding: 5px">
-                        <img src="~/assets/img/Community partners logo/03.jpg" width="300" height="150"/>
-                    </div>
-                    <div style="text-align: center">
-                        <br/>
-                        <a href="#">.NET Core Community (NCC)</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
- 
-<!-- End Speaker Section -->
-<!-- Ticket Section -->
-
-<!-- End Ticket Section -->
 <!-- Schedule Section -->
 <div id="scheduleSection" class="container  space-2">
 
@@ -379,6 +88,52 @@
 
 </div>
 <!-- End Schedule Section -->
+<!--社区合作伙伴-->
+<div class="">
+
+    <div class="w-lg-65 text-center mx-auto mb-5 mb-sm-9">
+        <h2 class="h1 font-weight-semi-bold">社区合作伙伴 </h2>
+
+    </div>
+    <div class="w-lg-75 mx-lg-auto">
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div style="text-align: center; height: 150px; padding: 5px">
+                        <img src="~/assets/img/Community partners logo/01.jpg" width="300" height="150" />
+                    </div>
+                    <div style="text-align: center">
+                        <br />
+                        <a href="#">胶东开发者社区</a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div style="text-align: center; height: 150px; padding: 5px">
+                        <img src="~/assets/img/Community partners logo/02.jpg" width="300" height="150" />
+                    </div>
+                    <div style="text-align: center">
+                        <br />
+                        <a href="#">微软技术俱乐部（苏州）</a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div style="text-align: center; height: 150px; padding: 5px">
+                        <img src="~/assets/img/Community partners logo/03.jpg" width="300" height="150" />
+                    </div>
+                    <div style="text-align: center">
+                        <br />
+                        <a href="#">.NET Core Community (NCC)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- End Speaker Section -->
+<!-- Ticket Section -->
+<!-- End Ticket Section -->
 <!-- Customer Section -->
 @await Component.InvokeAsync(typeof(CustomerViewComponent));
 <!-- End Customer Section -->
